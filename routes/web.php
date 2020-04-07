@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/address/streets', 'AddressController@getListStreets');
 Route::get('/address/streets/{name}', 'AddressController@getStreetByName');
 Route::get('/address/city/{name}', 'AddressController@getCityByName');
+
+/*Homework #13*/
+Route::get('/street/{id}', 'StreetController@getBuildingByIdAction');

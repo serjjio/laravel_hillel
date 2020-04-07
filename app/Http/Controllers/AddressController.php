@@ -12,6 +12,7 @@ class AddressController extends Controller
 
     public function getListStreets()
     {
+
         $streets = Street::all();
 
         return view('address/list_streets', ['streets' => $streets]);
